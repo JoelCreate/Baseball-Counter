@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        
+        <div id="container">
+            <section id="header">                                            
+                <h1>
+                    HOME
+                    <i class="fa-solid fa-baseball-bat-ball fa-sm"></i>
+                </h1>                
+            </section>
+            
+            <section id="inning">
+                <!--<h1>INNING<br>0</h1>
+                <span id="top-of-inning" onclick="inningUp()">
+                    <i class="fa-solid fa-caret-up fa-xl"></i>
+                </span>
+                <span id="bottom-of-inning" onclick="inningDown()">
+                    <i class="fa-solid fa-caret-down fa-xl"></i>
+                </span>-->
+                    <div class="count-blocks">
+                        <h3>INNING</h3>
+                        <h2 id="inningCount">0</h2>
+                        <div id="upDownArrow">
+                            <span id="top-of-inning" onclick="inningUp()">
+                                 <i class="fa-solid fa-sort-up fa-2xl"></i>
+                            </span>
+                            <span id="bottom-of-inning" onclick="inningDown()">
+                                <i class="fa-solid fa-sort-down fa-2xl"></i>
+                            </span>                            
+                        </div>
+                        <button id="resetBtn">RESET</button>
+                    </div>
+                    
+                                       
+                    <div class="count-blocks">
+                        <h3>OUTS</h3>
+                        <h2>1 1 1</h2>
+                        <div id="plusMinus">
+                            <i class="fa-solid fa-plus fa-2xs"></i>
+                            <i class="fa-solid fa-minus fa-2xs"></i>
+                        </div>
+                    </div>                
+                
+            </section>
+
+            <section id="score">                
+                <div id="home-score" onclick="increment()">00</div>
+            </section>
+        
+            <section id="count">
+                <div class="count-blocks">
+                    <h3>BALLS</h3>
+                    <div class="ball-count">
+                        <i id="ball-1-empty" class="fa-regular fa-circle-dot fa-2xl dot-empty" onclick="balls()"></i>
+                        <i id="ball-1-solid" class="fa-solid fa-circle-dot fa-2xl dot-solid" onclick="balls()"></i>
+                        <i id="ball-2-empty" class="fa-regular fa-circle-dot fa-2xl dot-empty"onclick="balls()"></i>
+                        <i id="ball-2-solid" class="fa-solid fa-circle-dot fa-2xl dot-solid" onclick="balls()"></i><br>
+                        <i id="ball-3-empty" class="fa-regular fa-circle-dot fa-2xl dot-empty" onclick="balls()"></i>
+                        <i id="ball-3-solid" class="fa-solid fa-circle-dot fa-2xl dot-solid" onclick="balls()"></i>
+                        <i id="ball-4-empty" class="fa-regular fa-circle-dot fa-2xl dot-empty" onclick="balls()"></i>
+                        <i id="ball-4-solid" class="fa-solid fa-circle-dot fa-2xl dot-solid" onclick="balls()"></i>
+                    </div><br>
+                    <div id="plusMinus">
+                        <i class="fa-solid fa-circle-plus" onclick="ballPlus()"></i>
+                        <i class="fa-solid fa-circle-minus" onclick="ballMinus()"></i>
+                    </div>
+                </div>
+                
+                <div id="line"></div>
+                
+                <div class="count-blocks">
+                    <h3>STRIKES</h3>
+                    <div class="ball-count">
+                        <i id="strike-1-empty" class="fa-regular fa-circle-dot fa-2xl dot-empty" onclick="strikes()"></i>
+                        <i id="strike-1-solid" class="fa-solid fa-circle-dot fa-2xl dot-solid" onclick="strikes()"></i>
+                        <i id="strike-2-empty" class="fa-regular fa-circle-dot fa-2xl dot-empty" onclick="strikes()"></i>
+                        <i id="strike-2-solid" class="fa-solid fa-circle-dot fa-2xl dot-solid" onclick="strikes()"></i><br>
+                        <i id="strike-3-empty" class="fa-regular fa-circle-dot fa-2xl dot-empty" onclick="strikes()"></i>
+                        <i id="strike-3-solid" class="fa-solid fa-circle-dot fa-2xl dot-solid" onclick="strikes()"></i>
+                    </div><br>
+                    <div id="plusMinus">
+                        <i class="fa-solid fa-circle-plus" onclick="ballPlus()"></i>
+                        <i class="fa-solid fa-circle-minus" onclick="ballMinus()"></i>
+                    </div>
+                </div>                
+            </section>
+        
+            <div id="pageDots">
+                <i class="fa-solid fa-circle"></i>&nbsp;&nbsp;
+                <i class="fa-regular fa-circle"></i>
+            </div>
+        </div> 
+               
+        <script src="index.js"></script>
+    </body>
+</html>
