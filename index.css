@@ -20,6 +20,10 @@ body {
     height: 100vh;
 }
 
+h3 {
+    font-weight: normal;
+}
+
 #container {
     background: #FEFAE0;
     width: 90vw;
