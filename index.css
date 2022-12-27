@@ -34,7 +34,7 @@ body {
 #header h1 {
     color: #DDA15E;
     margin-left: 32px;
-    font-size: 6vw;
+    font-size: 8vw;
 }
 
 #inning {
@@ -44,6 +44,7 @@ body {
   align-items: center;
   text-align: center;  
   color: #283618;
+  font-size: 5vw;
 }
 
 #top-of-inning {
@@ -68,11 +69,11 @@ body {
 }
 
 #home-score {
-    height: 30vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 200px;
+    font-size: 50vw;
 }
 
 #line {
@@ -94,13 +95,14 @@ body {
 
 #count h3 {
     color: #283618;
-    font-size: 30px;
+    font-size: 7vw;
     text-align: center;
 }
 
 .ball-count {
     margin: -10px auto;
     text-align: center; 
+    font-size: 4vw;
 }
 
 .dot-solid {
@@ -120,7 +122,7 @@ body {
 }
 
 .dot-empty {
-    margin: 0px 2px 25px 2px;
+    margin: 50px 5px;
 }
 
 #plusMinus {
