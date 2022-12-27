@@ -85,7 +85,7 @@ body {
 }
 
 #count {
-    height: 30vh;
+    height: 25vh;
     display: flex;
     justify-content: space-around;
     color: #283618;
@@ -97,6 +97,7 @@ body {
     color: #283618;
     font-size: 7vw;
     text-align: center;
+    margin: 25px auto;
 }
 
 .ball-count {
@@ -126,7 +127,7 @@ body {
 }
 
 #plusMinus {
-    margin: 10px auto;
+    margin: 50px auto;
     text-align: center;
     font-size: 40px;
 }
