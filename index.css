@@ -50,15 +50,20 @@ body {
   font-size: 5vw;
 }
 
+#inningCount {
+    margin: 0px auto 35px auto;
+}
+
 #top-of-inning {
     position: absolute;
-    margin: -150px 0px 0px 50px;
+    margin: -100px 0px 0px 60px;
 }
 
 #bottom-of-inning {
     position: absolute;
-    margin-top: -120px;
-    margin-left: 50px;
+    margin-top: -125px;
+    margin-left:60px;
+    display: none;
 }
 
 #resetBtn {
@@ -68,7 +73,6 @@ body {
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
-    margin-top: 20px;
 }
 
 #home-score {
@@ -107,6 +111,10 @@ body {
     margin: -10px auto;
     text-align: center; 
     font-size: 4vw;
+}
+
+.fa-solid {
+    margin: 0px 20px;
 }
 
 .dot-solid {
