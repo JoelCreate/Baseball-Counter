@@ -2,7 +2,7 @@ let homeScore = document.getElementById("home-score")
 let totalHome = 0
 
 let inning = document.getElementById("inningCount")
-let whatInningIsIt = 0
+let whatInningIsIt = 0 
 
 let topOfInning = document.getElementById("top-of-inning")
 let bottomOfInning = document.getElementById("bottom-of-inning")
