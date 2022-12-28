@@ -7,10 +7,22 @@ let whatInningIsIt = 0
 let topOfInning = document.getElementById("top-of-inning")
 let bottomOfInning = document.getElementById("bottom-of-inning")
 
+let numberOfOuts = document.getElementById("outs-el")
+let outs = 0;
 
 function increment(){
     totalHome += 1
     homeScore.textContent = totalHome
+}
+
+function howManyOuts() {
+   outs++
+   numberOfOuts.textContent = outs
+
+   if (outs === 3) {
+      outs = 0 - 1
+   }
+
 }
 
 function inningUp() {
