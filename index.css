@@ -46,13 +46,17 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #inning {
-  height: 20vh;
+  height: 15vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;  
   color: #283618;
   font-size: 5vw;
+}
+
+#inning h3, #inning h2 {
+    margin: 0px auto;
 }
 
 #inningCount {
@@ -62,6 +66,7 @@ h1,h2,h3,h4,h5,h6 {
 #top-of-inning {
     position: absolute;
     margin: -100px 0px 0px 60px;
+    display: none;
 }
 
 #bottom-of-inning {
@@ -81,7 +86,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #home-score {
-    height: 25vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -25,14 +25,18 @@ function howManyOuts() {
 
 }
 
-function inningUp() {
+function whatInning() {
     whatInningIsIt += 1
-    inning.textContent = whatInningIsIt 
-}
+    inning.textContent = whatInningIsIt
 
-function inningDown() {
-    whatInningIsIt -= 1
-    inning.textContent = whatInningIsIt 
+    /*if () {
+        topOfInning.style.display = "block"
+        bottomOfInning.style.display = "none" 
+    } else () {
+        bottomOfInning.style.display = "block"
+        topOfInning.style.display = "none"
+    }*/
+
 }
 
 let ballOneEmpty = document.getElementById("ball-1-empty")

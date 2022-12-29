@@ -14,36 +14,31 @@
                     <i class="fa-solid fa-baseball-bat-ball fa-sm"></i>
                 </h1>                
             </section>
+
+            
              
-            <section id="inning">
-                <!--<h1>INNING<br>0</h1>
-                <span id="top-of-inning" onclick="inningUp()">
-                    <i class="fa-solid fa-caret-up fa-xl"></i>
-                </span>
-                <span id="bottom-of-inning" onclick="inningDown()">
-                    <i class="fa-solid fa-caret-down fa-xl"></i>
-                </span>-->
-                    <div class="count-blocks">
-                        <h3>INNING</h3>
-                        <h2 id="inningCount">0</h2>
+            <section id="inning">                
+               <div onclick="whatInning()">
+                    <h3>INNING</h3>
+                    <h2 id="inningCount">0</h2>
                         <div id="upDownArrow">
                             <span id="top-of-inning" onclick="inningUp()">
-                                 <i class="fa-solid fa-sort-up fa-2xl"></i>
-                            </span>
-                            <span id="bottom-of-inning" onclick="inningDown()">
+                                <i class="fa-solid fa-sort-up fa-2xl"></i>
+                           </span>
+                           <span id="bottom-of-inning" onclick="inningDown()">
                                 <i class="fa-solid fa-sort-down fa-2xl"></i>
                             </span>                            
                         </div>
-                        <button id="resetBtn">RESET</button>
-                    </div>
+                             <!-- <button id="resetBtn">RESET</button> -->
+                </div>   
                     
-                                       
-                    <div class="count-blocks" id="outs">
-                        <h3>OUTS</h3>
-                        <h2 id="outs-el" onclick="howManyOuts()">0</h2>                        
-                    </div>                
-                
+                <div id="outs" onclick="howManyOuts()">
+                    <h3>OUTS</h3>
+                    <h2 id="outs-el">0</h2>   
+                </div>                 
             </section>
+
+
 
             <section id="score">                
                 <div id="home-score" onclick="increment()">00</div>
