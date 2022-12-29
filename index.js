@@ -26,16 +26,17 @@ function howManyOuts() {
 }
 
 function whatInning() {
+
     whatInningIsIt += 1
     inning.textContent = whatInningIsIt
 
-    /*if () {
-        topOfInning.style.display = "block"
-        bottomOfInning.style.display = "none" 
-    } else () {
-        bottomOfInning.style.display = "block"
-        topOfInning.style.display = "none"
-    }*/
+    if (bottomOfInning.style.opacity == "0.25") {
+        topOfInning.style.opacity = "1.0"
+        bottomOfInning.style.opacity = "0.25"
+    } else {
+        topOfInning.style.opacity = "0.25"
+        bottomOfInning.style.opacity = "1.0"
+    }
 
 }
 
